@@ -65,7 +65,7 @@ final class Mock<TC> implements MockInterface {
 							'%s $%s = %s',
 							(string) $parameter->getType(),
 							$parameter->getName(),
-							$parameter->getDefaultValue() === null ? 'null' : $parameter->getDefaultValue()
+							$parameter->getDefaultValueText()
 						);
 					} else {
 						if (Str\contains((string) $parameter->getType(), 'string')) {
